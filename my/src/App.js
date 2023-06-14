@@ -1,15 +1,15 @@
-
 import './App.css';
+import React, { Component } from 'react'
+import NavBar from './component/NavBar';
+import News from './components/News';
 
-function App() {
-  return (
-    <><nav>
-      <li>Home</li>
-      <li>About</li>
-      <li>contact us</li>
-    </nav>
-    </>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+          <NavBar/>
+        <News/>
+      </div> 
+    )
+  }
 }
-
-export default App;
